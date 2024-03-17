@@ -24,17 +24,17 @@ rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand ms-4 me-4" href="#home">
-                    <span id="fog">FOG</span> 
-                    <span class="e">E</span><span id="d">d</span><span id="u">u</span><span id="c">c</span><span id="a">a</span><span id="r">r</span><span class="e">e</span>
+                <a class="navbar-brand ms-4 ps-4" href="#home">
+                    <span id="fog">FOG</span>&nbsp;
+                    <div class="educare"><span class="e">E</span><span id="d">d</span><span id="u">u</span><span id="c">c</span><span id="a">a</span><span id="r">r</span><span class="e">e</span></div>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse ms-4" id="navbarNav">
-                    <ul class="navbar-nav">
+                <div class="collapse navbar-collapse ms-5" id="navbarNav">
+                    <ul class="navbar-nav ms-4 me-4">
                         <li class="nav-item ms-4">
                             <a class="nav-link" href="#home">Home</a>
                         </li>
@@ -48,6 +48,10 @@ rel="stylesheet">
                             <a class="nav-link" href="#contact">Contact Us</a>
                         </li>
                     </ul>
+                    <form class="d-flex ms-3 me-0" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-info" type="submit">Search</button>
+                    </form>
                 </div>
             </div>
         </nav>
@@ -56,7 +60,7 @@ rel="stylesheet">
     <main>
         <!-- home section start -->
         <section id="home" class="container">
-            <div class="row g-lg-0 py-4">
+            <div class="row g-lg-0 py-4 home-content">
                 <div class="welcome-text col col-lg-6">
                     <h1>Nurturing Potential At FOG Educare</h1>
                     <p>We are the best creche for your children. Our curriculum is fun and enjoyable, your child will always look forward to the next day.</p>
@@ -64,35 +68,184 @@ rel="stylesheet">
                 </div>
                 <div class="welcome-image col col-lg-6">
                     <img src="https://voice.vumc.org/wp-content/uploads/2019/11/child-with-toys-1280x854.jpg" 
-                    alt="toddler playing with toys">
+                    alt="toddler playing with toys" title="Home page image">
                 </div>
             </div>
             <div class="socials pt-0 mt-0">
-                <span><a class="social-link" href="" title="facebook"><i class="fa-brands fa-square-facebook"></i></a></span>
-                <span><a class="social-link" href="" title="instagram"><i class="fa-brands fa-square-instagram"></i></a></span>
-                <span><a class="social-link" href="" title="linkedin"><i class="fa-brands fa-linkedin"></i></a></span>
+                <span><a class="social-link" href="" title="facebook"><i class="fa-brands fa-square-facebook social-icon"></i></a></span>
+                <span><a class="social-link" href="" title="instagram"><i class="fa-brands fa-square-instagram social-icon"></i></a></span>
+                <span><a class="social-link" href="" title="linkedin"><i class="fa-brands fa-linkedin social-icon"></i></a></span>
             </div>
         </section>
         <!-- home section end -->
         
         <!-- about section start -->
+        <section id="about" class="container">
+            <h2 class="section-header text-center">Who We Are</h2>
+            <hr>
+            <div class="container-fluid content row">
+                <div class="about-image col col-lg-6">
+                    <img src="https://khcmi.org/wp-content/uploads/2021/12/iStock_000013114851Medium_2-1024x912.jpeg" 
+                    alt="five toddlers sitting in class" title="About us image">
+                </div>
+                <div class="about-text col col-lg-6">
+                    <h3><ion-icon name="trail-sign" size="large" class="about-icons"></ion-icon> Mission Statement</h3>
+                    <p>Through innovative teaching methods, nurturing guidance, and a vibrant learning environment, we aim to inspire a generation of confident, compassionate, and creative individuals who are prepared to make a positive impact on the world.</p>
+                    <hr>
+                    <h3><ion-icon name="school" size="large" class="about-icons"></ion-icon> Approach And Philosophy</h3>
+                    <p>Our philosophy is rooted in the belief that education goes beyond academics. Alongside our comprehensive curriculum, we prioritize social-emotional development, fostering a sense of curiosity, empathy, and resilience in our students.</p>
+                </div>
+            </div>
+            <div class="core-values row">
+                <div class="container text-center">
+                    <div class="row align-items-start">
+                        <div class="col box one">
+                            <ion-icon name="restaurant" class="ion-icon"></ion-icon><br>
+                            <h4>we serve breakfast and lunch everyday</h4>
+                        </div>
+                        <div class="col box two">
+                            <ion-icon name="key" class="ion-icon"></ion-icon><br>
+                            <h4>secure premises & safe equipment</h4>
+                        </div>
+                        <div class="col box three">
+                            <ion-icon name="heart" class="ion-icon"></ion-icon><br>
+                            <h4>healthy social interactions & caring staff</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- about section end -->
         
         <!-- programs section start -->
+        <section id="programs" class="container">
+            <div class="container px-4 py-5">
+                <h2 class="pb-2 border-bottom" id="programs-heading">Our Programs</h2>
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4 py-5">
+
+                    <div class="col d-flex align-items-center program">
+                        <i class="fa-solid fa-brain"></i><br>
+                        <div>
+                            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Cognitive Development:</h3>
+                            <p>This involves the development of thinking skills such as problem-solving, memory, attention, and understanding concepts like shapes, colors, numbers, and letters.</p>
+                        </div>
+                    </div>
+
+                    <div class="col d-flex align-items-center program">
+                        <i class="fa-solid fa-microphone"></i><br>
+                        <div>
+                            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Language Development:</h3>
+                            <p>Our programs support language skills including listening, speaking, reading etc. We use conversations, storytelling, and exposure to books and other language-rich environments.</p>
+                        </div>
+                    </div>
+
+                    <div class="col d-flex align-items-center program">
+                        <i class="fa-solid fa-people-arrows"></i><br>
+                        <div>
+                            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Social and Emotional Development:</h3>
+                            <p>We foster the ability to interact positively with others, develop friendships, understand and express emotions, and regulate behavior. We teach empathy, cooperation, and conflict resolution.</p>
+                        </div>
+                    </div>
+
+                    <div class="col d-flex align-items-center program">
+                        <i class="fa-solid fa-paintbrush"></i><br>
+                        <div>
+                            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Creative Development:</h3>
+                            <p>We encourage creativity through activities like art, music, dance, and imaginative play. Children explore their interests, experiment with materials, and express themselves in different ways.</p>
+                        </div>
+                    </div>
+
+                    <div class="col d-flex align-items-center program">
+                        <i class="fa-solid fa-dumbbell"></i><br>
+                        <div>
+                            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Physical Development:</h3>
+                            <p>Besides motor skills, FOG educare also supports overall physical health and well-being through activities such as outdoor play, exercise, healthy eating habits, and promoting good hygiene practices.</p>
+                        </div>
+                    </div>
+
+                    <div class="col d-flex align-items-center program">
+                        <i class="fa-solid fa-child-reaching"></i><br>
+                        <div>
+                            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Independence and Self-Help Skills:</h3>
+                            <p>FOG educare helps children develop independence by teaching them how to do things for themselves, such as dressing, feeding, and taking care of personal belongings.</p>
+                        </div>
+                    </div>
+                
+                </div>
+                <button type="button" class="btn btn-outline-info btn-lg" id="reviews" onclick="showModal()">Reviews</button>
+            </div>
+            <div class="modal modal-sheet bg-body-secondary p-4 py-md-5" id="modalSheet">
+                <div class="modal-dialog">
+                    <div class="modal-content rounded-4 shadow">
+                        <div class="modal-header border-bottom-0">
+                            <h1 class="modal-title fs-5 text-danger">Oops! Sorry!</h1>
+                        </div>
+                        <div class="modal-body py-0">
+                            <p>Hey there!</p>
+                            <p>This section of the website is not yet available</p>
+                            <p>It is coming soon</p>
+                        </div>
+                        <div class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0">
+                            <button type="button" class="btn btn-lg btn-outline-danger" onclick="closeModal()">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- programs section end -->
         
         <!-- contact section start -->
+        <section id="contact">
+            <h2 id="contact-heading">Contact Us</h2>
+            <hr>
+            <div class="row">
+                <div id="contact-img" class="col">
+                    <img src="https://media.istockphoto.com/id/157437381/photo/curiosity.jpg?s=612x612&w=0&k=20&c=glaZjCRjK3uGxx2dPNCkgBSZ39AnV_omy9oXjJJxqDo=" alt="toddler with phone and computer" title="Contact us image">
+                </div>
+                <form action="#" method="post" class="col">
+                    <input type="text" name="name" id="name" placeholder="full name">
+                    <input type="email" name="email" id="email" placeholder="email address">
+                    <input type="tel" name="phone" id="phone" placeholder="phone number">
+                    <textarea name="message" id="message" cols="30" rows="5" placeholder="message"></textarea>
+                    <button type="button" class="btn btn-outline-info btn-lg" name="button" id="button" onclick="showModal()">Submit</button>
+                </form>
+            </div>
+        </section>
         <!-- contact section end -->
 
     </main>
 
-    <footer></footer>
+    <footer>
+        <div class="container-fluid footer-content">
+            <div class="logo">
+                <a href="#home">
+                    <span id="logo-fog">FOG</span>&nbsp;
+                    <div class="logo-educare"><span class="e">E</span><span id="d">d</span><span id="u">u</span><span id="c">c</span><span id="a">a</span><span id="r">r</span><span class="e">e</span></div>
+                </a>
+            </div>
+            <hr>
+            <div id="details">
+                <p><i class="fa-solid fa-clock"></i> <span id="opening-time">opens at <em><b>06:30hrs</b></em></span>&nbsp; | &nbsp;<i class="fa-solid fa-clock"></i> <span id="closing-time">closes at <em><b>17:00hrs</b></em></span></p>
+                <p><ion-icon name="mail" title="email"></ion-icon> info@fogeducare.co.za</p>
+                <p><ion-icon name="location" title="address"></ion-icon> 37 Albow Road Rugby, Cape Town</p>
+                <p><ion-icon name="call" title="phone"></ion-icon> +27 82 969 8740</p>
+            </div>
+            <hr>
+            <div class="all-rights">
+                <p>&copy; Fog Educare 2024 - All rights reserved | Developed by <a href="www.tishbitedigital.co.za"><em><strong>Tishbite</strong></em></a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ionicons js scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     
     <!-- bootstrap js script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- custom js -->
     <script src="script.js"></script>
-
 </body>
 </html>
